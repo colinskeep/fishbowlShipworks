@@ -4,11 +4,10 @@ async function map(items) {
   let arr = [];
   try {
     for (let i = 0; i < items.length; i++) {
-      const result = await legend.getSku(items[i].RollUpItemSKU);
-      console.log(result[0]);
+      const result = await legend.getSku(items[i].RollupItemSKU);
       arr.push({
-        sW: items[i].RollUpItemSKU,
-        fB: result[0],
+        sW: items[i].RollupItemSKU,
+        fB: result.fbSku,
         qty: items[i].RollupItemQuantity,
        });
        if (i === items.length - 1){

@@ -8,7 +8,6 @@ const config = {
 
 async function  getOrder() {
     try {
-        console.log("gathering unshipped");
         await sql.connect(config);
         const result = await sql.query`select [OrderDate], [RollupItemSKU], [RollupItemQuantity] from [dbo].[Order] where [OnlineStatus] = 'Unshipped' order by [RollUpItemSku]`
         return result.recordset
