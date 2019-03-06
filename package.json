@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "mssql": "^4.3.2",
-    "mysql2": "^1.6.5"
+    "mysql2": "^1.6.5",
+    "objects-to-csv": "^1.2.1"
   }
 }

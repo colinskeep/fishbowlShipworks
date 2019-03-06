@@ -7,7 +7,7 @@ async function map(items) {
       const result = await legend.getSku(items[i].RollupItemSKU);
       arr.push({
         sW: items[i].RollupItemSKU,
-        fB: result.fbSku,
+        fB: result.fbsku,
         qty: items[i].RollupItemQuantity,
        });
        if (i === items.length - 1){

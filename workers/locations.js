@@ -5,7 +5,6 @@ async function find(mappedItems) {
   try {
     for (let i = 0; i < mappedItems.length; i++) {
       const result = await locations.getLoc(mappedItems[i].fB);
-      console.log(result);
       arr.push({
         sW: mappedItems[i].sW,
         fB: mappedItems[i].fB,
